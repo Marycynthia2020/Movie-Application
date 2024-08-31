@@ -3,7 +3,7 @@
     color:white;
     font-family: sans-serif;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 800;
     letter-spacing: 1px;
     position: relative;
 }
@@ -20,28 +20,34 @@
 h2 {
     font-family: "Rubik Bubbles", system-ui;
     color: #fff;
-    /* font-size: 3rem;
-    height: 40vh; */
+    font-size: 3rem;
+    height: 30vh;
+    padding-left: 2rem;
 }
 
 .contain {
     display: flex;
-    width: 40%;
-    gap: 3%;
+    width: 60%;
+    gap: 5%;
+    padding-left: 2rem;
 }
 
 .iconic, .red{
-    color: red
+    color: red;
+
 }
+
 .red{
     padding-right: 1rem;
+    padding-left: 2rem;
 }
 
 .description {
-    width: 40%;
+    width: 60%;
     margin-top: 2rem;
     margin-bottom: 2rem;
     line-height: 2rem;
+    padding-left: 2rem;
    
 }
 
@@ -65,11 +71,6 @@ h2 {
     flex: 0 0 auto; /* Prevents flex items from shrinking */
     width: 100%; /* Set fixed width for each card */
     position: relative;
-    color: white;
-    font-family: sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 1px;
   }
 
   .scroll-button {
