@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import "./scrollablecomponet.css"
+import PlayButton from "./PlayButton";
 
 const ScrollableComponent = ({data}) => {
 
@@ -52,6 +53,7 @@ const ScrollableComponent = ({data}) => {
         <p><span className="red"> Staring</span>{starring}</p>
         <p><span className="red"> Genres</span>{genres}</p>
         <p><span className="red"> Tags</span>{tags}</p>
+        <PlayButton />
         
       </div>
     );

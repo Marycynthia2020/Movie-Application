@@ -6,6 +6,8 @@
     font-weight: 800;
     letter-spacing: 1px;
     position: relative;
+    flex: 0 0 auto; /*Prevents flex items from shrinking */
+    width: 100%; /* Set fixed width for each card */
 }
 
 .cover-image{
@@ -66,12 +68,6 @@ h2 {
     /* gap: 20px */
     /* padding: 20px; */
     max-width: 100vw; /* Adjust width as needed */
-  }
-
-  .container {
-    flex: 0 0 auto; /* Prevents flex items from shrinking */
-    width: 100%; /* Set fixed width for each card */
-    position: relative;
   }
 
   .scroll-button {

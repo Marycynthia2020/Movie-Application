@@ -1,0 +1,20 @@
+.scroll-container-wrapper1 {
+    background-color: transparent;
+    width: 90%;
+    margin: 0rem  auto 1rem;
+}
+
+.container1 {
+    width: 40%;
+    height: 40vh;
+}
+
+.scroll-container1 {
+    overflow-y: hidden;
+}
+.heading {
+    margin-bottom: 0;
+    height: 10vh;
+    font-size: 2rem;
+    font-family: sans-serif;
+}
