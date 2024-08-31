@@ -13,14 +13,15 @@
     top: 0;
     width: 100%;
     height: 100vh;
-    z-index: -2
+    z-index: -2;
+    background-size: cover;
 }
 
 h2 {
     font-family: "Rubik Bubbles", system-ui;
     color: #fff;
-    font-size: 3rem;
-    height: 40vh;
+    /* font-size: 3rem;
+    height: 40vh; */
 }
 
 .contain {
