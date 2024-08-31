@@ -1,0 +1,92 @@
+.container {
+    height: 100vh;
+    color:white;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.cover-image{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -2
+}
+
+h2 {
+    font-family: "Rubik Bubbles", system-ui;
+    color: #fff;
+    font-size: 3rem;
+    height: 40vh;
+}
+
+.contain {
+    display: flex;
+    width: 40%;
+    gap: 3%;
+}
+
+.iconic, .red{
+    color: red
+}
+.red{
+    padding-right: 1rem;
+}
+
+.description {
+    width: 40%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+   
+}
+
+/* Wrapper for the scrollable container and buttons */
+.scroll-container-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .scroll-container {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    /* gap: 20px */
+    /* padding: 20px; */
+    max-width: 100vw; /* Adjust width as needed */
+  }
+
+  .container {
+    flex: 0 0 auto; /* Prevents flex items from shrinking */
+    width: 100%; /* Set fixed width for each card */
+    position: relative;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  .scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .left-button {
+    left: 10px;
+  }
+
+  .right-button {
+    right: 10px;
+  }

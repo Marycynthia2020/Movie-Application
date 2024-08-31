@@ -1,0 +1,30 @@
+import { Route, Routes } from 'react-router-dom'
+import './App.css'
+import Home from './Home/Home'
+import Series from './Series/Series'
+import Movies from './Movies/Movies'
+import Pages from './Pages/Pages'
+import Pricing from './Pricing/Pricing'
+import Contact from './Contact/Contact'
+import Notfound from './Notfound'
+import Nav from './Nav/Nav'
+
+function App() {
+
+  return (
+    <div>
+    <Nav />
+    <Routes>
+      <Route path = "/" element = {<Home />} />
+      <Route path = "/" element = {<Series />} />
+      <Route path = "/" element = {<Movies />} />
+      <Route path = "/" element = {<Pages />} />
+      <Route path = "/" element = {<Pricing />} />
+      <Route path = "/" element = {<Contact />} />
+      <Route path = "*" element = {<Notfound />} />
+    </Routes>
+    </div>
+  )
+}
+
+export default App
