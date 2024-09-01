@@ -19,8 +19,8 @@
     width: 20px;
 }
 
-a:active {
-    color:blue;
+.active-link {
+    color:rgb(255, 0, 55);
     text-decoration: underline;
 }
 

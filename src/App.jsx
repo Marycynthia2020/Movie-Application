@@ -16,11 +16,11 @@ function App() {
     <Nav />
     <Routes>
       <Route path = "/" element = {<Home />} />
-      <Route path = "/" element = {<Series />} />
-      <Route path = "/" element = {<Movies />} />
-      <Route path = "/" element = {<Pages />} />
-      <Route path = "/" element = {<Pricing />} />
-      <Route path = "/" element = {<Contact />} />
+      <Route path = "/series" element = {<Home />} />
+      <Route path = "/movies" element = {<Home />} />
+      <Route path = "/pages" element = {<Home />} />
+      <Route path = "/pricing" element = {<Home />} />
+      <Route path = "/contact" element = {<Home />} />
       <Route path = "*" element = {<Notfound />} />
     </Routes>
     </div>

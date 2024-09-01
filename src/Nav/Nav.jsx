@@ -16,12 +16,12 @@ const Nav = () => {
             <img src={streamlogo} alt= "logo"className="none" />
         </div>
         <nav className= {mobile? "nav": "no-display"}>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/">Series</NavLink>
-            <NavLink to="/">Movies</NavLink>
-            <NavLink to="/">Pages</NavLink>
-            <NavLink to="/">Pricing</NavLink>
-            <NavLink to="/">Contact</NavLink>
+            <NavLink className={({ isActive }) => (isActive ? 'active-link' : 'inactive-link')} to="/">Home</NavLink>
+            <NavLink className={({ isActive }) => (isActive ? 'active-link' : 'inactive-link')} to="/series">Series</NavLink>
+            <NavLink className={({ isActive }) => (isActive ? 'active-link' : 'inactive-link')} to="/movies">Movies</NavLink>
+            <NavLink className={({ isActive }) => (isActive ? 'active-link' : 'inactive-link')} to="/pages">Pages</NavLink>
+            <NavLink className={({ isActive }) => (isActive ? 'active-link' : 'inactive-link')} to="/pricing">Pricing</NavLink>
+            <NavLink className={({ isActive }) => (isActive ? 'active-link' : 'inactive-link')} to="/contact">Contact</NavLink>
         </nav>
         <div className="icons"> 
             <FontAwesomeIcon icon={faSearch}  className='icon'/>
