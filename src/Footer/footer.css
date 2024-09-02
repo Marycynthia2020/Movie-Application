@@ -50,7 +50,8 @@
         padding-left: 0.5rem;
     padding-right: 0.5rem;
     }
-    .flex {
+    .brand-logos {
+        display: flex;
         gap: 1rem;
     }
 }
