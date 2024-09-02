@@ -36,11 +36,11 @@ const Footer = () => {
         </div>
 
         <div className="brand-logos">
-            <div className="second-line flex">
+            <div className="flex">
                 <img src={appleStore} alt="apple store logo" />
                 <span>App Store</span>
             </div>
-            <div className="second-line flex">
+            <div className="flex">
                 <img src={playStore} alt="play store logo"/>
                 <span>Google Play Store</span>
             </div>
