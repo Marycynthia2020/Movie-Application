@@ -73,7 +73,7 @@ h2 {
   .scroll-button {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
@@ -115,4 +115,13 @@ h2 {
 
   .right-button {
     right: 10px;
+  }
+
+  @media (max-width: 768px){
+    .description {
+      width: 1000%;
+    }
+    .trailer {
+      top: 20%;
+    }
   }
