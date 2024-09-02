@@ -5,6 +5,7 @@ import Upcoming from './Upcoming'
 import Latest from './Latest'
 import Recommended from './Recommended'
 import Footer from '../Footer/Footer'
+import MovieDetails from '../MovieDetailsPage/MovieDetails'
 
 
 const Home = () => {

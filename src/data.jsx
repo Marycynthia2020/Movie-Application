@@ -9,7 +9,7 @@ export const homeData = [
       genres: "Action",
       tags: "Action, Adventures, Horror",
       cover: "/images/home1.jpg",
-      video: "../video/video1.mp4",
+      video: "/video/video1.mp4",
       date: "20-Jan-1997",
     },
     {
@@ -22,7 +22,7 @@ export const homeData = [
       genres: "Adventures",
       tags: "Adventures,Animation,Family",
       cover: "/images/home2.jpg",
-      video: "../video/video2.mp4",
+      video: "/video/video2.mp4",
       date: "10-JUL-2021",
     },
     {
@@ -35,7 +35,7 @@ export const homeData = [
       genres: "Adventures",
       tags: "Adventures,Action ",
       cover: "/images/home3.jpg",
-      video: "../video/video3.mp4",
+      video: "/video/video3.mp4",
       date: "20-FEB-2010",
     },
     {
@@ -48,7 +48,7 @@ export const homeData = [
       genres: "Action",
       tags: "Action, Adventures, Horror",
       cover: "/images/home4.jpg",
-      video: "../video/video4.mp4",
+      video: "/video/video4.mp4",
       date: "12-Aug-2015",
     },
   ]
@@ -129,6 +129,7 @@ export const homeData = [
       tags: "Action, Adventures, Horror",
       cover: "../images/img/slide1.png",
       date: "20-Jan-1997",
+      video: "/video/video2.mp4"
     },
     {
       id: 2,
@@ -141,6 +142,7 @@ export const homeData = [
       tags: "Adventures,Animation,Family",
       cover: "../images/img/slide2.jpg",
       date: "10-JUL-2021",
+      video: "/video/video3.mp4"
     },
     {
       id: 3,
@@ -153,6 +155,7 @@ export const homeData = [
       tags: "Adventures,Action ",
       cover: "../images/img/slide3.jpg",
       date: "20-FEB-2010",
+      video: "/video/video3.mp4",
     },
   ]
   export const recommended = [

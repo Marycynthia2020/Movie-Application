@@ -1,11 +1,16 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import "./scrollablecomponet.css"
 import PlayButton from "./PlayButton";
+import MovieDetails from "../MovieDetailsPage/MovieDetails";
 
 const ScrollableComponent = ({data}) => {
+  const [selectedMovies, setSelectedMovies] = useState(null);
 
+  const handleClick =(movie) => {
+    setSelectedMovies(movie)
+  }
     const scrollRef = useRef(null);
 
     // Function to scroll left
@@ -50,6 +55,7 @@ const ScrollableComponent = ({data}) => {
           <span>{time}</span>
         </div>
         <p className="description">{desc}</p>
+        <button  onClick={()=>handleClick (movie)}className="trailer"> &#9654; WATCH TRAILER</button>
         <p><span className="red"> Staring</span>{starring}</p>
         <p><span className="red"> Genres</span>{genres}</p>
         <p><span className="red"> Tags</span>{tags}</p>
@@ -61,7 +67,9 @@ const ScrollableComponent = ({data}) => {
 
 
   return (
-    <div className="scroll-container-wrapper">
+    <>
+    {selectedMovies? (<MovieDetails data={selectedMovies} />) : (
+      <div className="scroll-container-wrapper">
       <button onClick={scrollLeft} className="scroll-button left-button">
         &#9664; {/* Left arrow */}
       </button>
@@ -72,6 +80,11 @@ const ScrollableComponent = ({data}) => {
         &#9654; {/* Right arrow */}
       </button>
     </div>
+    )}
+      
+    </>
+
+    
   )
 };
 

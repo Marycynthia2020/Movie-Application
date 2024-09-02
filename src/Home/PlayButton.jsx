@@ -12,14 +12,15 @@ const myStyle = {
         fontWeight: 800,
         padding: "2rem",
         marginTop: "1rem",
-        marginLeft: "2rem"
+        marginLeft: "2rem",
+        cursor:'pointer'
 }
 
 const PlayButton = () => {
   return (
     <div>
         <button style = {myStyle}>
-        &#9664; Play Now
+        &#9654; Play Now
         </button>
     </div>
   )
