@@ -8,6 +8,7 @@ import Pricing from './Pricing/Pricing'
 import Contact from './Contact/Contact'
 import Notfound from './Notfound'
 import Nav from './Nav/Nav'
+import MovieDetails from './MovieDetailsPage/MovieDetails'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <Route path = "/pages" element = {<Home />} />
       <Route path = "/pricing" element = {<Home />} />
       <Route path = "/contact" element = {<Home />} />
+      <Route path="/moviedetails/:id" element= {<MovieDetails/>} exact/>
       <Route path = "*" element = {<Notfound />} />
     </Routes>
     </div>

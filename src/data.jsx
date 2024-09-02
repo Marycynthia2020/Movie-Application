@@ -128,8 +128,7 @@ export const homeData = [
       genres: "Action",
       tags: "Action, Adventures, Horror",
       cover: "../images/img/slide1.png",
-      date: "20-Jan-1997",
-      video: "/video/video2.mp4"
+      date: "20-Jan-1997"
     },
     {
       id: 2,
@@ -141,8 +140,7 @@ export const homeData = [
       genres: "Adventures",
       tags: "Adventures,Animation,Family",
       cover: "../images/img/slide2.jpg",
-      date: "10-JUL-2021",
-      video: "/video/video3.mp4"
+      date: "10-JUL-2021"
     },
     {
       id: 3,
@@ -154,8 +152,7 @@ export const homeData = [
       genres: "Adventures",
       tags: "Adventures,Action ",
       cover: "../images/img/slide3.jpg",
-      date: "20-FEB-2010",
-      video: "/video/video3.mp4",
+      date: "20-FEB-2010"
     },
   ]
   export const recommended = [

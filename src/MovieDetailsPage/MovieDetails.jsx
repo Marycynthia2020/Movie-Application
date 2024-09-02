@@ -1,29 +1,41 @@
-import React from "react";
+import React, { useEffect, useState} from "react";
 import Recommended from "../Home/Recommended";
 import Footer from "../Footer/Footer";
 import "./moviedetails.css"
-import { NavLink } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
+import { homeData } from "../data";
 
-const MovieDetails = ({ data }) => {
-  const { id, name, time, desc, video, date } = data;
+const MovieDetails = () => {
+  const {id} = useParams()
+  const [movie, setMovie] = useState(null)
+
+ useEffect( ()=> {
+    const movies = homeData.find(movie => {
+    if(movie.id == (id)) {
+    setMovie(movie)
+    }
+    })
+ }, [id] )
+
 
   return (
-    <div className="played-movie-container">
+    <>
+      {movie? (<div className="played-movie-container">
       <div key={id}>
         <div className="span">
-          <p className="movie-title">{name} </p>
-          <span> | {time} |</span>
+          <p className="movie-title">{movie.name} </p>
+          <span> | {movie.time} |</span>
           <span>HD</span>
         </div>
         <div style={{display: "flex", justifyContent:"center", alignItems:"center", marginBottom:'3rem'}}>
           <video controls autoplay loop muted>
-            <source src ={video} type="video/mp4" />
-            <source src ={video} type="video/webm" />
+            <source src ={movie.video} type="video/mp4" />
+            <source src ={movie.video} type="video/webm" />
             Your browser does not support the video tag
           </video>
         </div>
-        <p className="desc">DATE: {date}</p>
-        <p className="desc">{desc}</p>
+        <p className="desc">DATE: {movie.date}</p>
+        <p className="desc">{movie.desc}</p>
           
           <p className='desc'>
           Get access to the direct Project Overview with this report. Just by a
@@ -51,7 +63,8 @@ const MovieDetails = ({ data }) => {
       <Recommended />
       <NavLink to="/" className="view-all">View All</NavLink>
       <Footer />
-    </div>
+    </div>): ("no")}
+    </>
   );
 };
 

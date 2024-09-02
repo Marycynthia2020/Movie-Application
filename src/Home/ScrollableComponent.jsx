@@ -1,27 +1,23 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import "./scrollablecomponet.css"
+import "./scrollablecomponet.css";
 import PlayButton from "./PlayButton";
-import MovieDetails from "../MovieDetailsPage/MovieDetails";
+import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
-const ScrollableComponent = ({data}) => {
-  const [selectedMovies, setSelectedMovies] = useState(null);
+const ScrollableComponent = ({ data }) => {
+  const scrollRef = useRef(null);
 
-  const handleClick =(movie) => {
-    setSelectedMovies(movie)
-  }
-    const scrollRef = useRef(null);
+  // Function to scroll left
+  const scrollLeft = () => {
+    scrollRef.current.scrollBy({ left: -300, behavior: "smooth" });
+  };
 
-    // Function to scroll left
-    const scrollLeft = () => {
-      scrollRef.current.scrollBy({ left: -300, behavior: "smooth" });
-    };
-  
-    // Function to scroll right
-    const scrollRight = () => {
-      scrollRef.current.scrollBy({ left: 300, behavior: "smooth" });
-    };
+  // Function to scroll right
+  const scrollRight = () => {
+    scrollRef.current.scrollBy({ left: 300, behavior: "smooth" });
+  };
 
   const homeMovies = data.map((movie) => {
     const {
@@ -39,10 +35,10 @@ const ScrollableComponent = ({data}) => {
     } = movie;
 
     return (
-      <div key={id} className="container" >
+      <div key={id} className="container">
         <img src={cover} alt="cover-image" className="cover-image" />
         <h2>{name}</h2>
-        <div class="contain"> 
+        <div class="contain">
           <span className="iconic">
             <FontAwesomeIcon icon={faStar} />
             <FontAwesomeIcon icon={faStar} />
@@ -55,21 +51,32 @@ const ScrollableComponent = ({data}) => {
           <span>{time}</span>
         </div>
         <p className="description">{desc}</p>
-        <button  onClick={()=>handleClick (movie)}className="trailer"> &#9654; WATCH TRAILER</button>
-        <p><span className="red"> Staring</span>{starring}</p>
-        <p><span className="red"> Genres</span>{genres}</p>
-        <p><span className="red"> Tags</span>{tags}</p>
+        <Link to={`/moviedetails/${id}`} className="trailer">
+          <button className="watch-trailer-button">
+            <span className="watch-icon">&#9654;</span>
+            <span className="watch-text">WATCH TRAILER</span>
+          </button>
+        </Link>
+
+        <p>
+          <span className="red"> Staring</span>
+          {starring}
+        </p>
+        <p>
+          <span className="red"> Genres</span>
+          {genres}
+        </p>
+        <p>
+          <span className="red"> Tags</span>
+          {tags}
+        </p>
         <PlayButton />
-        
       </div>
     );
   });
 
-
   return (
-    <>
-    {selectedMovies? (<MovieDetails data={selectedMovies} />) : (
-      <div className="scroll-container-wrapper">
+    <div className="scroll-container-wrapper">
       <button onClick={scrollLeft} className="scroll-button left-button">
         &#9664; {/* Left arrow */}
       </button>
@@ -80,13 +87,7 @@ const ScrollableComponent = ({data}) => {
         &#9654; {/* Right arrow */}
       </button>
     </div>
-    )}
-      
-    </>
-
-    
-  )
+  );
 };
 
 export default ScrollableComponent;
-
