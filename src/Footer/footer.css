@@ -42,6 +42,10 @@
         flex-direction: column;
     }
     .footer-paragraph{
-        max-width: 100%;
+        width: 100%;
+    }
+    footer {
+        padding-left: 0;
+    padding-right: 0;
     }
 }
