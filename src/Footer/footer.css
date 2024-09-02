@@ -1,0 +1,47 @@
+.footer {
+    color: white;
+    margin-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.first-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.terms-of-use {
+    display: flex;
+    gap: 20px;
+}
+
+.second-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.footer-icons, .brand-logos {
+    display:flex
+}
+
+.footer-paragraph {
+    width:45vw;
+    line-height: 2rem;
+    letter-spacing: 1px;
+}
+
+.bold {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+@media (max-width:768px) {
+    .first-line, .second-line {
+        flex-direction: column;
+    }
+    .footer-paragraph{
+        max-width: 100%;
+    }
+}

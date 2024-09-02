@@ -4,6 +4,7 @@ import Trending from './Trending'
 import Upcoming from './Upcoming'
 import Latest from './Latest'
 import Recommended from './Recommended'
+import Footer from '../Footer/Footer'
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <Latest />
       <Trending />
       <Recommended />
+      <Footer />
       
       
     </div>
