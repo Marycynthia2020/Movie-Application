@@ -32,10 +32,10 @@
     letter-spacing: 1px;
 }
 
-/* .bold {
+.bold {
     font-weight: 600;
     font-size: 1.5rem;
-} */
+}
 
 @media (max-width:768px) {
     .first-line, .second-line, .terms-of-use {
@@ -49,5 +49,9 @@
     .footer {
         padding-left: 0.5rem;
     padding-right: 0.5rem;
+    }
+    .flex {
+        display: flex;
+        gap: 2rem;
     }
 }
