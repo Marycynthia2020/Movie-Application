@@ -119,9 +119,9 @@ h2 {
 
   @media (max-width: 768px){
     .description {
-      width: 1000%;
+      width: 100%;
     }
     .trailer {
-      top: 20%;
+      top: 50%;
     }
   }
