@@ -77,7 +77,7 @@ h2 {
     position: absolute;
     top: 50%;
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: rgb(247, 20, 20);
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -131,7 +131,7 @@ h2 {
       height: 70px;
     }
     .container {
-      height: auto;
+      height: au;
     }
 
   }
