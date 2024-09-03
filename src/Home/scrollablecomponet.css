@@ -127,4 +127,7 @@ h2 {
       height: 70px;
       width:70px;
     }
+    .contain {
+      width: 100%;
+    }
   }
