@@ -17,6 +17,7 @@
     height: 100vh;
     z-index: -2;
     background-size: cover;
+    height: auto;
 }
 
 h2 {
