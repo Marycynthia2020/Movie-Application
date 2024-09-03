@@ -30,7 +30,7 @@ h2 {
 
 .contain {
     display: flex;
-    width: 60%;
+    width: 80%;
     gap: 5%;
     padding-left: 2rem;
 }
