@@ -1,5 +1,4 @@
 .scroll-container-wrapper1 {
-    background-color: transparent;
     width: 90%;
     margin: 0rem  auto 1rem;
 }
@@ -21,4 +20,10 @@
 .reduce-heading {
     font-size: 1rem ;
     font-weight: 400;
+}
+
+@media  (max-width: 768px) {
+    .scroll-container-wrapper1 {
+        margin-top: 0;
+    }
 }

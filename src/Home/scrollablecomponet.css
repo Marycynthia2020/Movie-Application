@@ -124,16 +124,8 @@ h2 {
       top: 100px;
       color: red;
     }
-
-    /* .watch-icon{
-      height: 70px;
-      width:70px;
-    } */
     .the-time {
       display: none;
     }
 
-    .container {
-      margin-bottom: 0;
-    }
   }
