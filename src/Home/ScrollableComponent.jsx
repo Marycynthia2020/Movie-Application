@@ -47,8 +47,8 @@ const ScrollableComponent = ({ data }) => {
             <FontAwesomeIcon icon={faStar} />
           </span>
           <span>{rating}(lmdb)</span>
-          <span>GP</span>
-          <p>{time}</p>
+          <span className="the-time">GP</span>
+          <span >{time}</span>
         </div>
         <p className="description">{desc}</p>
         <Link to={`/moviedetails/${id}`} className="trailer">
