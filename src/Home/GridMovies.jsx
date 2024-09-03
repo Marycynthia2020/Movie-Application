@@ -26,7 +26,7 @@ const GridMovies = ({data, name}) => {
 
     return (
       <div key={id} className="container container1" >
-        <img src={cover} alt="cover-image" className="cover-image" />
+        <img src={cover} alt="cover-image" className="cover-image cover" />
         <h2 className = "reduce-heading">{name}</h2>
         <div class="contain"> 
           <span>{time}</span>
