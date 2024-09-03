@@ -39,13 +39,13 @@ const ScrollableComponent = ({ data }) => {
         <img src={cover} alt="cover-image" className="cover-image" />
         <h2>{name}</h2>
         <div class="contain">
-          <span className="iconic">
+          <div className="iconic">
             <FontAwesomeIcon icon={faStar} />
             <FontAwesomeIcon icon={faStar} />
             <FontAwesomeIcon icon={faStar} />
             <FontAwesomeIcon icon={faStar} />
             <FontAwesomeIcon icon={faStar} />
-          </span>
+          </div>
           <span>{rating}(lmdb)</span>
           <span className="the-time">GP</span>
           <span>{time}</span>
