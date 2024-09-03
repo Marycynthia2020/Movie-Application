@@ -87,7 +87,7 @@ h2 {
   .watch-icon{
     max-width:100%;
     width:100px;
-    height: auto;
+    aspect-ratio: auto 1/1;
   }
   
   .watch-trailer-button {
@@ -121,7 +121,7 @@ h2 {
       font-size:1rem;
       font-weight: 600;
       left: 20%;
-      top: 150%;
+      top: 70px;
       color: red;
     }
 
@@ -131,5 +131,9 @@ h2 {
     }
     .the-time {
       display: none;
+    }
+
+    .container {
+      margin-bottom: 0;
     }
   }
