@@ -48,7 +48,7 @@ const ScrollableComponent = ({ data }) => {
           </span>
           <span>{rating}(lmdb)</span>
           <span>GP</span>
-          <span>{time}</span>
+          <p>{time}</p>
         </div>
         <p className="description">{desc}</p>
         <Link to={`/moviedetails/${id}`} className="trailer">
