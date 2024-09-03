@@ -17,6 +17,7 @@
     height: 100vh;
     z-index: -2;
     background-size: cover;
+    aspect-ratio: 4/3;
 }
 
 h2 {
@@ -81,34 +82,52 @@ h2 {
     cursor: pointer;
     z-index: 10;
   }
-  .trailer {
+
+  /* .trailer {
+    position:absolute;
+    top:50%;
+    
+  } */
+  /* .trailer {
     position:absolute;
     left:50%;
-  }
-
-  .watch-trailer-button {
     display: flex;
-    align-items: center; 
-    gap: 0.5rem; 
-    border: none; 
-    cursor: pointer;
-    font-size: 1rem;
-    background-color: red;
-    border-radius: 50%;
-    padding: 1rem;
-    font-weight: 800;
+   jus
+    
+  } */
+
+  /* .watch-trailer-button {
+    
+    /* gap: 0.5rem;  */
+    /* border: none; 
+    cursor: pointer; */
+   
+    /* background-color: red; */
+    /* border-radius: 50%; */
+    /* padding: 1rem; */
+    
+  /* } */ 
+  .watch-icon{
+    max-width:100%;
+    width:100px;
   }
   
-  .watch-icon {
-    font-size: 1.2rem;
-  }
   
-  .watch-text {
-    display: inline;
+  .watch-trailer-button {
+    font-size: 1.5rem;
+    font-weight:800;
+    position: absolute;
+    left: 50%;
+    color: white;
+    display: flex;
+    background: none;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+    letter-spacing:1.5px;
   }
 
-
-  
   .left-button {
     left: 10px;
   }
@@ -121,7 +140,8 @@ h2 {
     .description {
       width: 100%;
     }
-    .trailer {
-      top: 25%;
+    .watch-trailer-button {
+      left: 50%;
+      top:25%
     }
   }

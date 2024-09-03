@@ -4,7 +4,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import "./scrollablecomponet.css";
 import PlayButton from "./PlayButton";
 import { Link } from "react-router-dom";
-// import { Link } from "react-router-dom";
+import playButton from "/images/play-button.png"
 
 const ScrollableComponent = ({ data }) => {
   const scrollRef = useRef(null);
@@ -53,8 +53,10 @@ const ScrollableComponent = ({ data }) => {
         <p className="description">{desc}</p>
         <Link to={`/moviedetails/${id}`} className="trailer">
           <button className="watch-trailer-button">
-            <span className="watch-icon">&#9654;</span>
-            <span className="watch-text">WATCH TRAILER</span>
+            <div className="watch">
+            <img src={playButton} className="watch-icon" />
+            </div>
+            WATCH TRAILER
           </button>
         </Link>
 
