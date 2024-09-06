@@ -29,9 +29,7 @@ const ScrollableComponent = ({ data }) => {
       starring,
       genres,
       tags,
-      cover,
-      video,
-      date,
+      cover
     } = movie;
 
     return (

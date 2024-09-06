@@ -80,6 +80,7 @@
 
  }
 
-
-
+}
+@media (max-width: 1000px) {
+    .icons {display: none;}
 }
